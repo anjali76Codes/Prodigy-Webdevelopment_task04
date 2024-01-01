@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+  <div class="navbar">
+    <img class="logo" src="Images/LOGO.png.png" alt="logo"> 
+   <div class = "nav">ANJALI GUPTA<br>web-developer</div>
+   <!-- Hamburger Icon -->
+<div class="hamburger-icon" onclick="toggleFunction()">
+  <i class="fas fa-bars"></i>
+</div>
+      <ul class="nav-items">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+  </div>
+  <section id="home">
+    <div class="headings">
+      <span>I AM</span><br>
+      <span id="name">ANJALI GUPTA</span>
+      <p>I'm deeply passionate about technology and dedicated to becoming the best version of myself, especially in the realm of programming and development.</p>
+      <div class="download-resume">
+        <a href="https://drive.google.com/drive/folders/1-8XBPZpbcgpfyZlsZFlalcpJfuJlvFYv?usp=sharing ">Download Resume</a>
+      </div>
+    </div>
+    <div class="pic">
+      <img src="Images/Me.png.png">
+    </div>
+  </section>
+  
+
+<section id="about"> 
+<div class="content">
+  <div class="image">
+    <img src="Images/pic.png.png">
+  </div>
+  <div class="intro">
+    <h1 class="heading">About Me</h1>
+    <p>I am a second-year computer engineering student, deeply passionate about technology. I thrive on tackling coding challenges, exploring the latest advancements in the field, and collaborating with peers to create innovative solutions. Beyond academics, I actively engage in tech communities to stay abreast of industry trends. My journey is fueled by curiosity, and I aim to make a positive impact through my skills and knowledge in the ever-evolving world of computing.</p>
+
+
+<div class="titles" id="education-title"> <!-- id for the click event -->
+  <p class="tit-links" onclick="toggleContent('education-content')">Education</p>
+  <ul id="education-content" style="display: none;">
+    <li><strong>SSC:</strong> BVN high school , Mar-2019, Grade obtained: 85.40%</li>
+    <li><strong>HSC:</strong> BNN college, Jul-2021, Grade obtained: 91%</li>
+    <li><strong>Current Study:</strong> University of Mumbai-B.tech, Computer Engineering, Vidyavardhini's College of Engineering and Technology</li>
+  </ul>
+</div>
+
+  </div>
+</div>
+</section>
+<section id="skills">
+  <div class="skill-content">
+    <h1 id="heading">Skills</h1>
+    <hr>
+
+  <div class="category-column">
+    <div class="category">Programming Languages
+      <ul>
+        <li><img src="Images/html.png">HTML</li>
+        <li><img src="Images/css.png">CSS</li>
+        <li><img src="Images/jscript.png">Javascript</li>
+        <li><img src="Images/C.png">C Language</li>
+        <li><img src="Images/java.png">Core JAVA</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="category-column">
+    <div class="category">Development
+      <ul>
+        <li>Web-developer</li>
+        <li>Data Structures and Algorithms</li>
+        <li>UI/UX Design (Android)</li>
+      </ul>
+    </div>
+  </div>
+
+ 
+</section>
+<section id="projects">
+  <div class="project-content">Project
+    <hr>
+    <h2>Mini Project</h2>
+    <h4>Food Donation App</h4>
+    <p>In group of four we are developed a food donation app as a mini project. When users first visit our app, they need to register by providing their email and password. Once they have successfully submitted their account information, it will be secured.
+
+      The app has two main sections: the donor section and the receiver section. In the donor section, anyone can add details about the food they want to donate, such as its name, type, quality, and other relevant information. On the other hand, the receiver section is exclusive to NGOs or charities who must undergo verification by the admin. Only after admin verification can receivers book donated foods, ensuring that fraudulent activities are minimized.
+      
+      Additionally, the app features a chat system, allowing users to freely ask any questions related to the app. We have implemented Firebase authentication to enhance the security of user accounts. </p>
+ <hr>
+      <h2>Course Project</h2>
+    <h3> 1. Text Editor</h3>
+    <p>I made a text editor where we can easily change how our text looks - pick the font style, size, and color.
+      This text editor is built on a stack -based data structures and algorithms. We can also change the background color. It's simple to clear or delete text, and we can save our work in different file formats like HTML, text, or PDF. This makes it easy to use and customize for writing and saving documents.</p>
+    <h3> 2. Currency Converter</h3>
+    <p>I created a currency converter using Java, making it easy for users to convert between currencies. It's user-friendly, allowing you to input an amount in one currency and get the equivalent in another. The program is designed to work well and be accessible to a broad audience.</p>
+    </div>
+</section>
+   
+  <!-- Contact Section -->
+<section id="contact">
+  <div class="contact-content">
+    <h2>Contact</h2>
+  
+    <div class="contact-details">
+      <p class="contact-info">
+        <span class="label">Email:</span> anjaligupta92958@gmail.com
+      </p>
+      <p class="contact-info">
+        <span class="label">Phone:</span> +91- 8967459875
+      </p>
+      <p class="contact-info">
+        <span class="label">LinkedIn:</span> <a href="https://www.linkedin.com/in/anjali-gupta" target="_blank">Anjali Gupta</a>
+      </p>
+    </div>
+  </div>
+    
+    <!-- Footer -->
+    <footer class="contact-footer">
+      <div class="footer-content">
+        <div class="social-icons">
+          <a href="https://github.com/anjali76Codes" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/yourtwitter" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/anjali-gupta-58550a290/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+          <a href="https://www.instagram.com/invites/contact/?i=nhrkz9847y5t&utm_content=sdfowny" target="_blank"><i class="fab fa-instagram"></i></a>
+          
+        </div>
+        <p>&copy; 2023 Anjali Gupta | Web Developer</p>
+      </div>
+    </footer>
+</section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

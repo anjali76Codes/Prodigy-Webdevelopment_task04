@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url(Images/bg.png); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: black;
+}
+
+/* Navigation Styles */
+.navbar {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0px 25px;
+  color: white;
+}
+
+.navbar ul li a:hover {
+  height: 4vh;
+  border-bottom: 2px #f87963;
+  color: red;
+  box-shadow: 0 0 12px #f87963;
+}
+
+.logo {
+  max-width: 5.26vmax;
+  height: 8vh;
+  position: relative;
+  right: 24%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav {
+  color: aliceblue;
+  position: relative;
+  right: 23%;
+  margin-bottom: 5px;
+}
+
+.nav:hover {
+  color: rgb(245, 249, 4);
+  font-weight: bold;
+  transform: scale(1);
+}
+
+/* Home Section Styles */
+#home {
+  display: flex;
+  color: white;
+  height: 85vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pic img {
+  position: absolute;
+  top: 20%;
+  right: 20vmax;
+  width: 20vmax;
+  height: auto;
+  border: 2px solid rgb(2, 6, 5);
+  background-color: #a7509a;
+  border-style: double;
+  border-radius: 3vh 0.5vw 1vh 5vh;
+}
+
+.headings {
+  position: absolute;
+  top: 30%;
+  width: 25vw;
+  margin-left: 15vmax;
+}
+
+span {
+  font-size: 2rem;
+}
+#name {
+  color: orangered;
+}
+.headings p {
+  margin-top: 3vh;
+  font-size: 1.3rem;
+  color: #e5b817;
+}
+.download-resume {
+  position: relative;
+  left: 15%;
+  padding: 3vh 0px;
+  z-index: 1;
+}
+.download-resume a {
+  display: inline-block;
+  padding: 1.8vh 0.7vw;
+  background-color: #0788f1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.download-resume a:hover {
+  background-color: darkred;
+}
+*/
+
+/* About Section Styles */
+#about {
+  background-color: #0c071c;
+  padding: 8vmax 0px;
+}
+
+.content {
+  background-color: #0c071c;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image {
+  margin-left: 1vw;
+  margin-top: 5vh;
+  flex-basis: 25%;
+}
+
+.image img {
+  width: 100%;
+  border: 2px solid rgb(126, 116, 116);
+  border-radius: 10px;
+}
+
+.intro {
+  flex-basis: 65%;
+  color: white;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 25px 0px;
+  line-height: 1vmax;
+}
+
+.tit-links {
+  margin: 2vw 1.96vw;
+  font-weight: 700;
+  font-size: 1.4rem;
+  width: 8vw;
+  padding: 7px;
+  border-bottom: 2px solid red;
+}
+
+.tit-links:hover {
+  color: yellow;
+}
+
+li {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+/* Skills Section Styles */
+#skills {
+  height: 80vh;
+  position: relative;
+  top: 2vh;
+  background-color: #0c071c;
+}
+
+#heading {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: aliceblue;
+  padding: 10px 15px 1px 15px;
+  text-align: center;
+}
+
+hr {
+  margin: 20px 20px;
+}
+
+.category-column {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 13%;
+}
+
+.category {
+  color: aliceblue;
+  font-size: 1.5rem;
+  padding: 1.2vw 5vh;
+}
+
+.category ul {
+  padding: 0px;
+  list-style: none;
+  position: relative;
+  top: 10px;
+}
+
+.category ul img {
+  max-width: 3vmax;
+  height: auto;
+  margin-right: 20px;
+}
+.category ul li {
+  padding: 10px 30px;
+  color: #f87963;
+  margin-left: 10px;
+  position: relative;
+  gap: 10px;
+}
+.category ul li:hover {
+  background-color: #e5b817;
+  color: #070707;
+}
+
+/* Projects Section Styles */
+#projects {
+  height: 90%;
+  width: 100%;
+  color: white;
+  margin: -3vmin 1vmin;
+  background-color: #0c071c;
+  padding: 30px 70px;
+}
+.project-content {
+  font-size: 2rem;
+  font-weight: bold;
+
+  color: aliceblue;
+}
+
+.project-content h2 {
+  margin-top: 2vh;
+}
+
+.project-content h4 {
+  color: orangered;
+  padding: 20px 5px;
+  font-size: 1.5rem;
+}
+
+.project-content p {
+  margin: 1vh;
+  margin-bottom: 5vh;
+  font-size: 1.1rem;
+}
+
+h3 {
+  color: orchid;
+  margin-top: 3vh;
+}
+
+/* Contact Section Styles */
+#contact {
+  margin-top: 30px;
+  background-color: #0c071c;
+  padding: 40px 0;
+}
+
+#contact h2 {
+  font-size: 1.8rem;
+  color: darkred;
+  border-bottom: 2px solid rgb(245, 169, 6);
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+.contact-content {
+  margin-left: 10vmax;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info {
+  font-size: 1.2rem;
+  color: beige;
+  margin-bottom: 10px;
+}
+
+.contact-info .label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+.contact-footer {
+  text-align: center;
+  background-color: #0c071c;
+  padding: 20px 0;
+}
+
+.contact-footer .footer-content {
+  color: #fff;
+}
+
+.contact-footer .social-icons {
+  color: white;
+  margin-bottom: 15px;
+}
+.contact-footer .social-icons:hover {
+  color: rgb(255, 217, 0);
+}
+
+.contact-footer a {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.contact-footer p {
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-icon {
+    display: block;
+  }
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .navbar ul {
+    display: none;
+  }
+
+  .headings {
+    position: relative;
+    top: 50%;
+    width: auto;
+  }
+
+  #about {
+    position: relative;
+    top: 5vh;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .tit-links {
+    width: 20vmax;
+  }
+
+  #skills {
+    position: relative;
+    top: 5vh;
+    height: auto;
+  }
+
+  .category ul {
+    display: inline-block;
+  }
+
+  #projects {
+    margin-top: 5vh;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+}
