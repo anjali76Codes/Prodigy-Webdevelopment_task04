@@ -11,6 +11,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: black;
+
 }
 
 /* Navigation Styles */
@@ -53,7 +54,7 @@ body {
   max-width: 5.26vmax;
   height: 8vh;
   position: relative;
-  right: 24%;
+right: 24%;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -64,7 +65,7 @@ body {
 .nav {
   color: aliceblue;
   position: relative;
-  right: 23%;
+ right: 24%;
   margin-bottom: 5px;
 }
 
@@ -81,12 +82,12 @@ body {
   height: 85vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.pic {
+.pic{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.pic img {
+.pic img{
   position: absolute;
   top: 20%;
   right: 20vmax;
@@ -98,25 +99,29 @@ body {
   border-radius: 3vh 0.5vw 1vh 5vh;
 }
 
-.headings {
-  position: absolute;
-  top: 30%;
-  width: 25vw;
-  margin-left: 15vmax;
+
+.headings{
+position: absolute;
+top: 30%;
+width: 25vw;
+margin-left: 15vmax;
 }
 
-span {
+span{
   font-size: 2rem;
+  font-family:Arial, Helvetica, sans-serif;
 }
-#name {
+#name{
   color: orangered;
+font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
 }
-.headings p {
+.headings p{
   margin-top: 3vh;
   font-size: 1.3rem;
   color: #e5b817;
 }
-.download-resume {
+.download-resume{
   position: relative;
   left: 15%;
   padding: 3vh 0px;
@@ -134,8 +139,7 @@ span {
 
 .download-resume a:hover {
   background-color: darkred;
-}
-*/
+} */
 
 /* About Section Styles */
 #about {
@@ -217,18 +221,21 @@ hr {
   display: inline-block;
   vertical-align: top;
   margin-right: 13%;
+ 
 }
 
 .category {
   color: aliceblue;
   font-size: 1.5rem;
   padding: 1.2vw 5vh;
+
 }
 
 .category ul {
   padding: 0px;
   list-style: none;
   position: relative;
+  /* left: -20px; */
   top: 10px;
 }
 
@@ -243,11 +250,14 @@ hr {
   margin-left: 10px;
   position: relative;
   gap: 10px;
+
 }
 .category ul li:hover {
   background-color: #e5b817;
   color: #070707;
 }
+
+
 
 /* Projects Section Styles */
 #projects {
@@ -261,18 +271,33 @@ hr {
 .project-content {
   font-size: 2rem;
   font-weight: bold;
-
+ 
   color: aliceblue;
 }
 
 .project-content h2 {
   margin-top: 2vh;
 }
+.project-content img {
+  width: auto;
+  height: 50vh;
+  transition: filter 0.5s ease, box-shadow 0.5s ease;
+}
+
+.project-content img:hover {
+  filter: grayscale(10%) brightness(80%);
+  box-shadow: 0 0 35px white;
+}
+
 
 .project-content h4 {
   color: orangered;
   padding: 20px 5px;
   font-size: 1.5rem;
+}
+.course-pr{
+  width: auto;
+  height: 35vh;
 }
 
 .project-content p {
@@ -285,6 +310,7 @@ h3 {
   color: orchid;
   margin-top: 3vh;
 }
+
 
 /* Contact Section Styles */
 #contact {
@@ -369,11 +395,12 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  .hamburger-icon {
+
+  .hamburger-icon{
     display: block;
   }
-  .nav-items {
-    display: none;
+    .nav-items{
+     display: none;
     flex-direction: column;
     position: absolute;
     top: 15%;
@@ -381,43 +408,46 @@ h3 {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  .navbar ul {
+  .navbar ul{
     display: none;
   }
-
-  .headings {
+  
+  .headings{
     position: relative;
     top: 50%;
-    width: auto;
+    width: auto ;
   }
-
-  #about {
-    position: relative;
-    top: 5vh;
+ 
+  #about{
+position: relative;
+top: 5vh;
   }
-  .content {
+  .content{
     display: flex;
     flex-direction: column;
   }
-  .tit-links {
-    width: 20vmax;
+  .tit-links{
+     width: 20vw;
+
+
   }
 
-  #skills {
+  #skills{
     position: relative;
     top: 5vh;
-    height: auto;
+   height: auto;
   }
 
   .category ul {
-    display: inline-block;
+display: inline-block;
   }
 
-  #projects {
-    margin-top: 5vh;
+  #projects{
+margin-top:5vh; 
   }
 
   .hamburger-icon {
     display: block;
   }
 }
+
